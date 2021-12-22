@@ -1,8 +1,7 @@
 import { ListGroup } from "react-bootstrap";
 
-const Listview =({setmasterData,setButtonName,setobject})=>{
+const Listview =({masterData,setmasterData,setButtonName,setobject})=>{
 
-    let masterData=setmasterData
     const handleDelete =(idx)=>{
         console.log(idx);
         let newidx=masterData.findIndex(obj => obj.unique_id===idx );
